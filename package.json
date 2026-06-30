@@ -1,27 +1,26 @@
 {
-  "name": "starter-basic",
+  "name": "tina-barebones-starter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
-    "build-local": "tinacms build --content=local --skip-cloud-checks -c \"next build\"",
-    "start": "tinacms build && next start",
-    "lint": "next lint"
+    "dev": "tinacms dev -c \"vite\"",
+    "build": "tinacms build && vite build",
+    "build-local": "tinacms build --local --skip-cloud-checks -c \"vite build\"",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "next": "^14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tinacms": "^3.8.1",
+    "react-router-dom": "^7.18.1",
+    "tinacms": "^3.9.3",
     "typescript": "5.5.2"
   },
   "devDependencies": {
-    "@tinacms/cli": "^2.3.1",
-    "@types/node": "^22.18.12",
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.1",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.33"
+    "@tinacms/cli": "^2.5.1",
+    "@types/node": "^22.20.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "vite": "^6.4.3"
   }
 }
