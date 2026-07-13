@@ -30,6 +30,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# cloudflare
+.wrangler
+
 .yarn
 
 .prototools
