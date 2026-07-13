@@ -30,3 +30,4 @@ No credentials yet? `pnpm build-local` builds against local content.
 - [Tina Docs](https://tina.io/docs)
 - [Getting Started](https://tina.io/docs/setup-overview/)
 - [TinaCMS on GitHub](https://github.com/tinacms/tinacms)
+- [Deploy on Vercel](https://tina.io/guides/tina-cloud/add-tinacms-to-existing-site/deployment/)
