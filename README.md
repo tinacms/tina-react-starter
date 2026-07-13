@@ -25,6 +25,13 @@ pnpm build
 
 No credentials yet? `pnpm build-local` builds against local content.
 
+## Deploying
+
+This is a client-side SPA — `pnpm build` produces one `dist/index.html` plus assets, and `react-router` decides routes in the browser. A host that only serves matching files will 404 on a direct hit or refresh of any route but `/`, so a rewrite/fallback to `index.html` is required:
+
+- **Vercel** — `vercel.json` (included) rewrites every path to `/index.html`.
+- **Cloudflare Workers** — `wrangler.jsonc` (included) sets `assets.not_found_handling: "single-page-application"`, which does the same thing. Deploy with `npx wrangler deploy` after `pnpm build`.
+
 ## Learn More
 
 - [Tina Docs](https://tina.io/docs)

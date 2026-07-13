@@ -1,0 +1,12 @@
+{
+	// Cloudflare config — only read when deploying to Cloudflare Pages/Workers;
+	// other hosts ignore this file. No Worker script: this is a pure static
+	// deploy of the Vite build output, with SPA fallback so client-side
+	// react-router routes (e.g. /about) resolve on a direct hit or refresh.
+	"name": "tina-react-starter",
+	"compatibility_date": "2026-07-12",
+	"assets": {
+		"directory": "./dist",
+		"not_found_handling": "single-page-application"
+	}
+}
