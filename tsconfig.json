@@ -13,5 +13,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["src", "tina", "vite.config.ts"]
+  "include": ["src", "tina", "vite.config.ts"],
+  "exclude": ["node_modules"]
 }
