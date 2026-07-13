@@ -6,25 +6,34 @@
     "node": "24.x"
   },
   "scripts": {
-    "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
-    "build-local": "tinacms build --content=local --skip-cloud-checks -c \"next build\"",
-    "start": "tinacms build && next start",
-    "lint": "next lint"
+    "dev": "tinacms dev -c \"vite\"",
+    "build": "tinacms build && vite build",
+    "build-local": "tinacms build --local --skip-cloud-checks -c \"vite build\"",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "next": "^14.2.35",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "tinacms": "^3.10.0",
-    "typescript": "5.5.2"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
+    "tinacms": "^3.9.3",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@tinacms/cli": "^2.5.3",
-    "@types/node": "^22.18.12",
-    "@types/react": "^18.3.1",
-    "@types/react-dom": "^18.3.1",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "^14.2.33"
+    "@tinacms/cli": "^2.5.1",
+    "@types/node": "^26.0.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "vite": "^8.1.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "react": "19",
+        "react-dom": "19",
+        "typescript": ">=5.7",
+        "fs-extra": "11"
+      }
+    }
   }
 }

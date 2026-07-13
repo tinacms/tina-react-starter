@@ -8,12 +8,8 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
+# vite build output
+/dist
 
 # misc
 .DS_Store
@@ -35,3 +31,16 @@ yarn-error.log*
 .vercel
 
 .yarn
+
+.prototools
+
+# TODO: After scaffolding from this template, DELETE the block below so your
+# chosen lockfile (we recommend pnpm-lock.yaml) is committed. See README → "Commit your lockfile".
+# Package Manager Lock Files (pnpm-workspace.yaml stays committed)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+.yarn/cache
+bun.lock
+bun.lockb
+deno.lock

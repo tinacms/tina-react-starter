@@ -1,6 +1,5 @@
-packages:                # required by pnpm 9 (Vercel default for this project)
+packages:
   - "."
-
 onlyBuiltDependencies:   # pnpm 10
   - better-sqlite3
   - core-js
