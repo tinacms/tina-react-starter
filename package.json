@@ -15,11 +15,11 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1",
-    "tinacms": "^3.9.3",
+    "tinacms": "^3.14.0",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@tinacms/cli": "^2.5.1",
+    "@tinacms/cli": "^3.0.0",
     "@types/node": "^26.0.1",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
